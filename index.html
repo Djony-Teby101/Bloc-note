@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud-systeme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="new-note">
+            <input type="text" name="title" id="title" placeholder="Title">
+            <textarea name="content" id="content" placeholder="Commencer à ecrire"></textarea>
+            <div id="form-error"></div>
+
+            <div class="button-container">
+                <button class="add-btn" onclick="addNote()">Add note</button>
+            </div><br>
+            <div id="notes-wrapper"></div>
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

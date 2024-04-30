@@ -1,0 +1,53 @@
+.new-note{
+    margin-bottom: 32px;
+    background-color: rgb(253, 252, 252);
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    padding: 16px;
+
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.note{
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 5px;
+}
+
+.note-title{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 100%;
+    display: inline-block;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+.note-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-edit, .note-save, .note-delete{
+    background: none;
+    border: none;
+    color: #0000bb;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.note-edit[disabled="true"], .note-save[disabled="true"]{
+    color: #dfdfdf;
+    pointer-events: none;
+    user-select: none;
+    cursor: not-allowed;
+}
